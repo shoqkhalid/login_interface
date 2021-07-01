@@ -1,0 +1,180 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+section{
+
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  
+}
+section .Bimg{
+
+  position: relative;
+  width: 60%;   
+  height: 100%;
+
+}
+section .Bimg :before{
+ 
+ position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; 
+
+}
+section .Bimg img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .cont{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+
+}
+section .cont .form{ 
+  width: 75%;
+}
+section .cont .form h2{
+  
+  color: rgb(39, 38, 38);
+   font-weight: 520;
+   font-size: 40px;
+   margin-bottom: 50px;
+   display:block;
+   letter-spacing: 1px;
+   text-align: center;
+  
+}
+section .cont .form.input{
+  margin-bottom: 20px;
+}
+section .cont .form .input input{ 
+  display: flex;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding:0 20px;
+}
+section .cont .form .input input[type="submit"]{
+    background: #6675df;
+    justify-content: center;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+section .cont .form .input input[type="submit"]:hover{
+    background: #212529;
+}
+section .cont .form .re{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+section .cont .form .re input[type="checkbox"]{
+  margin-right: 4px;
+  cursor: pointer;
+  float: left;
+}
+section .cont .form .re label{
+    color: #999;
+    font-weight: 400;
+    font-size: 13px;
+    cursor: pointer;
+    float: left;
+}
+section .cont .form .re a{
+    color: #999;
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 1.4;
+    float: left;
+}
+section .cont .form  p{
+  color: #999;
+  text-align: center;
+  margin: 30px 0 10px;
+  font-weight: 200;
+  font-size: 13px;
+}
+
+section .cont .form .sci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .cont .form .sci li{
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 7px;
+    cursor: pointer;
+}
+section .cont .form .sci li:hover{
+    background: rgb(29, 28, 28);
+
+}
+section .cont .form .sci li image{
+    transform: scale(0.5);
+    filter: invert(1);
+   
+}
+@media(max-width:768px){
+  section .Bimg{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+    }
+  section .cont{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  section .cont .form{
+      width: 100%;
+      padding: 40px;
+      background: rgb(255 255 255 /0.9);
+      margin: 50px;
+    }
+  section .cont .form  p{
+      color: #999;
+      text-align: center;
+      margin: 30px 0 10px;
+      font-weight: 200;
+      font-size: 13px;
+      padding-bottom: 10px;
+    }
+}
+  
